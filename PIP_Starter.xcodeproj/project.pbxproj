@@ -14,6 +14,19 @@
 		E8D49E2E1ACF9286008E6DA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D49E2D1ACF9286008E6DA2 /* Images.xcassets */; };
 		E8D49E311ACF9286008E6DA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8D49E2F1ACF9286008E6DA2 /* LaunchScreen.xib */; };
 		E8D49E3D1ACF9286008E6DA2 /* PIP_StarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49E3C1ACF9286008E6DA2 /* PIP_StarterTests.swift */; };
+		E8D49E4D1ACF94F4008E6DA2 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D49E4C1ACF94F4008E6DA2 /* PhotosUI.framework */; };
+		E8D49E4F1ACF94F4008E6DA2 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D49E4E1ACF94F4008E6DA2 /* Photos.framework */; };
+		E8D49E541ACF94F4008E6DA2 /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49E531ACF94F4008E6DA2 /* PhotoEditingViewController.swift */; };
+		E8D49E561ACF94F4008E6DA2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D49E551ACF94F4008E6DA2 /* MainInterface.storyboard */; };
+		E8D49E591ACF94F4008E6DA2 /* PIP_Edit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8D49E4A1ACF94F4008E6DA2 /* PIP_Edit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8D49E681AD36931008E6DA2 /* DocumentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49E671AD36931008E6DA2 /* DocumentPickerViewController.swift */; };
+		E8D49E6A1AD36931008E6DA2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D49E691AD36931008E6DA2 /* MainInterface.storyboard */; };
+		E8D49E751AD36932008E6DA2 /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49E741AD36932008E6DA2 /* FileProvider.swift */; };
+		E8D49E781AD36932008E6DA2 /* PIP_DocumentsFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8D49E6F1AD36932008E6DA2 /* PIP_DocumentsFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8D49E7B1AD36932008E6DA2 /* PIP_Documents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8D49E621AD36931008E6DA2 /* PIP_Documents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8D49E8B1AD36975008E6DA2 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D49E8A1AD36975008E6DA2 /* ShareViewController.swift */; };
+		E8D49E8D1AD36975008E6DA2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D49E8C1AD36975008E6DA2 /* MainInterface.storyboard */; };
+		E8D49E901AD36975008E6DA2 /* PIP_Share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8D49E861AD36975008E6DA2 /* PIP_Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +37,52 @@
 			remoteGlobalIDString = E8D49E1D1ACF9286008E6DA2;
 			remoteInfo = PIP_Starter;
 		};
+		E8D49E571ACF94F4008E6DA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8D49E161ACF9286008E6DA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8D49E491ACF94F4008E6DA2;
+			remoteInfo = PIP_Edit;
+		};
+		E8D49E761AD36932008E6DA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8D49E161ACF9286008E6DA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8D49E6E1AD36932008E6DA2;
+			remoteInfo = PIP_DocumentsFileProvider;
+		};
+		E8D49E791AD36932008E6DA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8D49E161ACF9286008E6DA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8D49E611AD36931008E6DA2;
+			remoteInfo = PIP_Documents;
+		};
+		E8D49E8E1AD36975008E6DA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8D49E161ACF9286008E6DA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8D49E851AD36975008E6DA2;
+			remoteInfo = PIP_Share;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8D49E5D1ACF94F4008E6DA2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8D49E781AD36932008E6DA2 /* PIP_DocumentsFileProvider.appex in Embed App Extensions */,
+				E8D49E7B1AD36932008E6DA2 /* PIP_Documents.appex in Embed App Extensions */,
+				E8D49E901AD36975008E6DA2 /* PIP_Share.appex in Embed App Extensions */,
+				E8D49E591ACF94F4008E6DA2 /* PIP_Edit.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E8D49E1E1ACF9286008E6DA2 /* PIP_Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIP_Starter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +96,25 @@
 		E8D49E361ACF9286008E6DA2 /* PIP_StarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIP_StarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D49E3B1ACF9286008E6DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8D49E3C1ACF9286008E6DA2 /* PIP_StarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIP_StarterTests.swift; sourceTree = "<group>"; };
+		E8D49E4A1ACF94F4008E6DA2 /* PIP_Edit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PIP_Edit.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D49E4C1ACF94F4008E6DA2 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		E8D49E4E1ACF94F4008E6DA2 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		E8D49E521ACF94F4008E6DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D49E531ACF94F4008E6DA2 /* PhotoEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditingViewController.swift; sourceTree = "<group>"; };
+		E8D49E551ACF94F4008E6DA2 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		E8D49E621AD36931008E6DA2 /* PIP_Documents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PIP_Documents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D49E651AD36931008E6DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D49E661AD36931008E6DA2 /* PIP_Documents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PIP_Documents.entitlements; sourceTree = "<group>"; };
+		E8D49E671AD36931008E6DA2 /* DocumentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerViewController.swift; sourceTree = "<group>"; };
+		E8D49E691AD36931008E6DA2 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		E8D49E6F1AD36932008E6DA2 /* PIP_DocumentsFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PIP_DocumentsFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D49E721AD36932008E6DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D49E731AD36932008E6DA2 /* PIP_DocumentsFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PIP_DocumentsFileProvider.entitlements; sourceTree = "<group>"; };
+		E8D49E741AD36932008E6DA2 /* FileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProvider.swift; sourceTree = "<group>"; };
+		E8D49E861AD36975008E6DA2 /* PIP_Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PIP_Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D49E891AD36975008E6DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D49E8A1AD36975008E6DA2 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		E8D49E8C1AD36975008E6DA2 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +132,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8D49E471ACF94F4008E6DA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D49E4D1ACF94F4008E6DA2 /* PhotosUI.framework in Frameworks */,
+				E8D49E4F1ACF94F4008E6DA2 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D49E5F1AD36931008E6DA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D49E6C1AD36932008E6DA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D49E831AD36975008E6DA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +170,11 @@
 			children = (
 				E8D49E201ACF9286008E6DA2 /* PIP_Starter */,
 				E8D49E391ACF9286008E6DA2 /* PIP_StarterTests */,
+				E8D49E501ACF94F4008E6DA2 /* PIP_Edit */,
+				E8D49E631AD36931008E6DA2 /* PIP_Documents */,
+				E8D49E701AD36932008E6DA2 /* PIP_DocumentsFileProvider */,
+				E8D49E871AD36975008E6DA2 /* PIP_Share */,
+				E8D49E4B1ACF94F4008E6DA2 /* Frameworks */,
 				E8D49E1F1ACF9286008E6DA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +184,10 @@
 			children = (
 				E8D49E1E1ACF9286008E6DA2 /* PIP_Starter.app */,
 				E8D49E361ACF9286008E6DA2 /* PIP_StarterTests.xctest */,
+				E8D49E4A1ACF94F4008E6DA2 /* PIP_Edit.appex */,
+				E8D49E621AD36931008E6DA2 /* PIP_Documents.appex */,
+				E8D49E6F1AD36932008E6DA2 /* PIP_DocumentsFileProvider.appex */,
+				E8D49E861AD36975008E6DA2 /* PIP_Share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +231,88 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E8D49E4B1ACF94F4008E6DA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8D49E4C1ACF94F4008E6DA2 /* PhotosUI.framework */,
+				E8D49E4E1ACF94F4008E6DA2 /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8D49E501ACF94F4008E6DA2 /* PIP_Edit */ = {
+			isa = PBXGroup;
+			children = (
+				E8D49E531ACF94F4008E6DA2 /* PhotoEditingViewController.swift */,
+				E8D49E551ACF94F4008E6DA2 /* MainInterface.storyboard */,
+				E8D49E511ACF94F4008E6DA2 /* Supporting Files */,
+			);
+			path = PIP_Edit;
+			sourceTree = "<group>";
+		};
+		E8D49E511ACF94F4008E6DA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8D49E521ACF94F4008E6DA2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8D49E631AD36931008E6DA2 /* PIP_Documents */ = {
+			isa = PBXGroup;
+			children = (
+				E8D49E671AD36931008E6DA2 /* DocumentPickerViewController.swift */,
+				E8D49E691AD36931008E6DA2 /* MainInterface.storyboard */,
+				E8D49E641AD36931008E6DA2 /* Supporting Files */,
+			);
+			path = PIP_Documents;
+			sourceTree = "<group>";
+		};
+		E8D49E641AD36931008E6DA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8D49E651AD36931008E6DA2 /* Info.plist */,
+				E8D49E661AD36931008E6DA2 /* PIP_Documents.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8D49E701AD36932008E6DA2 /* PIP_DocumentsFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				E8D49E741AD36932008E6DA2 /* FileProvider.swift */,
+				E8D49E711AD36932008E6DA2 /* Supporting Files */,
+			);
+			path = PIP_DocumentsFileProvider;
+			sourceTree = "<group>";
+		};
+		E8D49E711AD36932008E6DA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8D49E721AD36932008E6DA2 /* Info.plist */,
+				E8D49E731AD36932008E6DA2 /* PIP_DocumentsFileProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8D49E871AD36975008E6DA2 /* PIP_Share */ = {
+			isa = PBXGroup;
+			children = (
+				E8D49E8A1AD36975008E6DA2 /* ShareViewController.swift */,
+				E8D49E8C1AD36975008E6DA2 /* MainInterface.storyboard */,
+				E8D49E881AD36975008E6DA2 /* Supporting Files */,
+			);
+			path = PIP_Share;
+			sourceTree = "<group>";
+		};
+		E8D49E881AD36975008E6DA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8D49E891AD36975008E6DA2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +323,15 @@
 				E8D49E1A1ACF9286008E6DA2 /* Sources */,
 				E8D49E1B1ACF9286008E6DA2 /* Frameworks */,
 				E8D49E1C1ACF9286008E6DA2 /* Resources */,
+				E8D49E5D1ACF94F4008E6DA2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E8D49E581ACF94F4008E6DA2 /* PBXTargetDependency */,
+				E8D49E771AD36932008E6DA2 /* PBXTargetDependency */,
+				E8D49E7A1AD36932008E6DA2 /* PBXTargetDependency */,
+				E8D49E8F1AD36975008E6DA2 /* PBXTargetDependency */,
 			);
 			name = PIP_Starter;
 			productName = PIP_Starter;
@@ -153,6 +356,74 @@
 			productReference = E8D49E361ACF9286008E6DA2 /* PIP_StarterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E8D49E491ACF94F4008E6DA2 /* PIP_Edit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D49E5A1ACF94F4008E6DA2 /* Build configuration list for PBXNativeTarget "PIP_Edit" */;
+			buildPhases = (
+				E8D49E461ACF94F4008E6DA2 /* Sources */,
+				E8D49E471ACF94F4008E6DA2 /* Frameworks */,
+				E8D49E481ACF94F4008E6DA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PIP_Edit;
+			productName = PIP_Edit;
+			productReference = E8D49E4A1ACF94F4008E6DA2 /* PIP_Edit.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E8D49E611AD36931008E6DA2 /* PIP_Documents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D49E7F1AD36932008E6DA2 /* Build configuration list for PBXNativeTarget "PIP_Documents" */;
+			buildPhases = (
+				E8D49E5E1AD36931008E6DA2 /* Sources */,
+				E8D49E5F1AD36931008E6DA2 /* Frameworks */,
+				E8D49E601AD36931008E6DA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PIP_Documents;
+			productName = PIP_Documents;
+			productReference = E8D49E621AD36931008E6DA2 /* PIP_Documents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E8D49E6E1AD36932008E6DA2 /* PIP_DocumentsFileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D49E7C1AD36932008E6DA2 /* Build configuration list for PBXNativeTarget "PIP_DocumentsFileProvider" */;
+			buildPhases = (
+				E8D49E6B1AD36932008E6DA2 /* Sources */,
+				E8D49E6C1AD36932008E6DA2 /* Frameworks */,
+				E8D49E6D1AD36932008E6DA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PIP_DocumentsFileProvider;
+			productName = PIP_DocumentsFileProvider;
+			productReference = E8D49E6F1AD36932008E6DA2 /* PIP_DocumentsFileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E8D49E851AD36975008E6DA2 /* PIP_Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D49E911AD36975008E6DA2 /* Build configuration list for PBXNativeTarget "PIP_Share" */;
+			buildPhases = (
+				E8D49E821AD36975008E6DA2 /* Sources */,
+				E8D49E831AD36975008E6DA2 /* Frameworks */,
+				E8D49E841AD36975008E6DA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PIP_Share;
+			productName = PIP_Share;
+			productReference = E8D49E861AD36975008E6DA2 /* PIP_Share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,10 +435,23 @@
 				TargetAttributes = {
 					E8D49E1D1ACF9286008E6DA2 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = LAK6SGQ7Q5;
 					};
 					E8D49E351ACF9286008E6DA2 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = E8D49E1D1ACF9286008E6DA2;
+					};
+					E8D49E491ACF94F4008E6DA2 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					E8D49E611AD36931008E6DA2 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					E8D49E6E1AD36932008E6DA2 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					E8D49E851AD36975008E6DA2 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -186,6 +470,10 @@
 			targets = (
 				E8D49E1D1ACF9286008E6DA2 /* PIP_Starter */,
 				E8D49E351ACF9286008E6DA2 /* PIP_StarterTests */,
+				E8D49E491ACF94F4008E6DA2 /* PIP_Edit */,
+				E8D49E611AD36931008E6DA2 /* PIP_Documents */,
+				E8D49E6E1AD36932008E6DA2 /* PIP_DocumentsFileProvider */,
+				E8D49E851AD36975008E6DA2 /* PIP_Share */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +493,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D49E481ACF94F4008E6DA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D49E561ACF94F4008E6DA2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D49E601AD36931008E6DA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D49E6A1AD36931008E6DA2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D49E6D1AD36932008E6DA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D49E841AD36975008E6DA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D49E8D1AD36975008E6DA2 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +548,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8D49E461ACF94F4008E6DA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D49E541ACF94F4008E6DA2 /* PhotoEditingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D49E5E1AD36931008E6DA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D49E681AD36931008E6DA2 /* DocumentPickerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D49E6B1AD36932008E6DA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D49E751AD36932008E6DA2 /* FileProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D49E821AD36975008E6DA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D49E8B1AD36975008E6DA2 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +587,26 @@
 			isa = PBXTargetDependency;
 			target = E8D49E1D1ACF9286008E6DA2 /* PIP_Starter */;
 			targetProxy = E8D49E371ACF9286008E6DA2 /* PBXContainerItemProxy */;
+		};
+		E8D49E581ACF94F4008E6DA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8D49E491ACF94F4008E6DA2 /* PIP_Edit */;
+			targetProxy = E8D49E571ACF94F4008E6DA2 /* PBXContainerItemProxy */;
+		};
+		E8D49E771AD36932008E6DA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8D49E6E1AD36932008E6DA2 /* PIP_DocumentsFileProvider */;
+			targetProxy = E8D49E761AD36932008E6DA2 /* PBXContainerItemProxy */;
+		};
+		E8D49E7A1AD36932008E6DA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8D49E611AD36931008E6DA2 /* PIP_Documents */;
+			targetProxy = E8D49E791AD36932008E6DA2 /* PBXContainerItemProxy */;
+		};
+		E8D49E8F1AD36975008E6DA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8D49E851AD36975008E6DA2 /* PIP_Share */;
+			targetProxy = E8D49E8E1AD36975008E6DA2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -342,6 +713,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PIP_Starter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +724,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PIP_Starter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -392,6 +765,106 @@
 			};
 			name = Release;
 		};
+		E8D49E5B1ACF94F4008E6DA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PIP_Edit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E8D49E5C1ACF94F4008E6DA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PIP_Edit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E8D49E7D1AD36932008E6DA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PIP_DocumentsFileProvider/PIP_DocumentsFileProvider.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PIP_DocumentsFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E8D49E7E1AD36932008E6DA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PIP_DocumentsFileProvider/PIP_DocumentsFileProvider.entitlements;
+				INFOPLIST_FILE = PIP_DocumentsFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E8D49E801AD36932008E6DA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PIP_Documents/PIP_Documents.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PIP_Documents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E8D49E811AD36932008E6DA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PIP_Documents/PIP_Documents.entitlements;
+				INFOPLIST_FILE = PIP_Documents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E8D49E921AD36975008E6DA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PIP_Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E8D49E931AD36975008E6DA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PIP_Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +890,38 @@
 			buildConfigurations = (
 				E8D49E441ACF9286008E6DA2 /* Debug */,
 				E8D49E451ACF9286008E6DA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E8D49E5A1ACF94F4008E6DA2 /* Build configuration list for PBXNativeTarget "PIP_Edit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D49E5B1ACF94F4008E6DA2 /* Debug */,
+				E8D49E5C1ACF94F4008E6DA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E8D49E7C1AD36932008E6DA2 /* Build configuration list for PBXNativeTarget "PIP_DocumentsFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D49E7D1AD36932008E6DA2 /* Debug */,
+				E8D49E7E1AD36932008E6DA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E8D49E7F1AD36932008E6DA2 /* Build configuration list for PBXNativeTarget "PIP_Documents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D49E801AD36932008E6DA2 /* Debug */,
+				E8D49E811AD36932008E6DA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E8D49E911AD36975008E6DA2 /* Build configuration list for PBXNativeTarget "PIP_Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D49E921AD36975008E6DA2 /* Debug */,
+				E8D49E931AD36975008E6DA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
